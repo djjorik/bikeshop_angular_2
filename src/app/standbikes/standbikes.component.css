@@ -1,0 +1,68 @@
+*{
+	margin:0;
+	padding: 0;
+}
+.standbikes {
+	width:100%;
+	height: 630px;
+	margin-left:0;
+}
+.tagname {
+	padding-top:75px;
+	font-weight: bold;
+}
+.standbikes ul {
+	list-style: none;
+	width:100%;
+	margin-top:10px;
+	margin-left:0;
+}
+.standbikes ul li {
+	display:inline-block;
+	height:500px;
+	
+	width:500px;
+	margin-right:5%;
+}
+.standbikes ul li:last-child {
+	margin-right: 0;
+}
+.popbikes {
+	position: relative;
+}
+.popbikes h5 {
+	font-weight: bold;
+	position: absolute;
+	left: 10px;
+	bottom: -70px;
+}
+.popbikes p {
+	position: absolute;
+	left: 10px;
+	bottom: -90px;
+}
+.popbikes button {
+	color:yellow;
+ 	background-color: black;
+ 	outline: none;
+ 	border:none;
+ 	padding: 13px 35px;
+ 	border-radius: 15px;
+ 	position:absolute;
+ 	bottom: -95px;
+ 	right: 20px;
+}
+@media screen and (max-width: 1700px) {
+   .standbikes {
+	
+	height:1150px;
+   }
+
+}
+@media screen and (max-width: 1076px) {
+   .standbikes {
+	
+	height:1650px;
+   }
+
+}

@@ -1,0 +1,10 @@
+* {
+	margin:0;
+	padding: 0;
+}
+.header {
+	/*background: url(../assets/img/header.jpg)  no-repeat;*/
+	height: 980px;
+	background-size:100%;
+	margin-bottom:0;
+}

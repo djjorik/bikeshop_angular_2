@@ -1,0 +1,29 @@
+<div class="contact text-center ">
+	
+<h2>CONTACT US</h2>
+<p>Please contact us for all inquiries and purchase options.</p>
+
+  <div>
+  <form  [formGroup]="myForm" (ngSubmit)="onSubmit(myForm.value)" >
+    <input type="username" class="username" placeholder="NAME" name="username" [formControl]="myForm.get('username')" [(ngModel)]="username" >
+   <input type="username" class="username surname" placeholder="SURNAME"  name="surname" [formControl]="myForm.get('surname')" [(ngModel)]="surname"><br>
+	<div class="emailinvalid" *ngIf=" myForm.get('username').touched || myForm.get('surname').touched"><span  >
+    Please enter your name and surname.
+  </span></div>
+
+    <input  formControlName="email" type="email" class=" mail" placeholder="USER@DOMAIN.COM">
+       <div class="emailinvalid" *ngIf="myForm.hasError('email', 'email') && myForm.get('email').touched"><span  >
+    Please enter the correct email, this email not valid.
+  </span></div>
+          <br>
+    <textarea name="mesasge" class=" comment" placeholder="MESSAGE" cols="60" rows="8" name="comment" [formControl]="myForm.get('message')" [(ngModel)]="message"></textarea>
+
+
+    <br>
+    <button type="submit" class="sendbutton" [disabled]="!myForm.valid">SEND</button>
+  </form>
+</div>
+
+
+</div>
+
